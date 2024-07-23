@@ -20,3 +20,5 @@ A simple chat application using Java Swing for the GUI and sockets for network c
    ```sh
    git clone https://github.com/your-username/java-swing-chat.git
    cd java-swing-chat
+2. Port & ip Address:
+   -Change the port number and the ip in your server.
