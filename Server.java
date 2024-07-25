@@ -27,7 +27,7 @@ public class Server extends JFrame implements Runnable, ActionListener {
         send = new JButton("Send");
         send.addActionListener(this);
 
-        // Apply custom colors
+      
         Color bgColor = new Color(255, 248, 225);
         Color btnColor = new Color(50, 205, 50);
 
@@ -41,7 +41,7 @@ public class Server extends JFrame implements Runnable, ActionListener {
         send.setForeground(Color.WHITE);
         send.setFocusPainted(false);
 
-        // Layout setup
+       
         setLayout(new BorderLayout());
         JScrollPane scrollPane = new JScrollPane(textArea);
         scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
@@ -64,7 +64,6 @@ public class Server extends JFrame implements Runnable, ActionListener {
             e.printStackTrace();
         }
 
-        // Initialize chat thread
         chat = new Thread(this);
         chat.start();
 
