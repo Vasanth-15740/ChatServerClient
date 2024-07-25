@@ -24,7 +24,7 @@ class Client extends JFrame implements Runnable, ActionListener {
         send = new JButton("Send");
         send.addActionListener(this);
 
-        // Apply custom colors
+        
         Color bgColor = new Color(240, 248, 255);
         Color btnColor = new Color(50, 205, 50);
 
@@ -38,7 +38,7 @@ class Client extends JFrame implements Runnable, ActionListener {
         send.setForeground(Color.WHITE);
         send.setFocusPainted(false);
 
-        // Layout setup
+        
         setLayout(new BorderLayout());
         JScrollPane scrollPane = new JScrollPane(textArea);
         scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
@@ -51,7 +51,7 @@ class Client extends JFrame implements Runnable, ActionListener {
         add(scrollPane, BorderLayout.CENTER);
         add(panel, BorderLayout.SOUTH);
 
-        // Initialize networking
+      
         try {
             socket = new Socket("192.168.71.172", 5000);
             dataInputStream = new DataInputStream(socket.getInputStream());
@@ -60,11 +60,11 @@ class Client extends JFrame implements Runnable, ActionListener {
             e.printStackTrace();
         }
 
-        // Initialize chat thread
+       
         chat = new Thread(this);
         chat.start();
 
-        // JFrame settings
+        
         setTitle("Client");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(500, 500);
