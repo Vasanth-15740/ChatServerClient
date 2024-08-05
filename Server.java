@@ -27,7 +27,6 @@ public class Server extends JFrame implements Runnable, ActionListener {
         send = new JButton("Send");
         send.addActionListener(this);
 
-      
         Color bgColor = new Color(255, 248, 225);
         Color btnColor = new Color(50, 205, 50);
 
@@ -41,7 +40,6 @@ public class Server extends JFrame implements Runnable, ActionListener {
         send.setForeground(Color.WHITE);
         send.setFocusPainted(false);
 
-       
         setLayout(new BorderLayout());
         JScrollPane scrollPane = new JScrollPane(textArea);
         scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
