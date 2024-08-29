@@ -6,7 +6,6 @@ import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
-
 class Client extends JFrame implements Runnable, ActionListener {
     private JTextField textField;
     private JTextArea textArea;
